@@ -1,13 +1,18 @@
 import os
 import sys
+"""
+WSGI config for nakdi_backend project.
 
+It exposes the WSGI callable as a module-level variable named ``application``.
 
-sys.path.insert(0, os.path.dirname(__file__))
+For more information on this file, see
+https://docs.djangoproject.com/en/4.0/howto/deployment/wsgi/
+"""
 
+import os
 
-def application(environ, start_response):
-    start_response('200 OK', [('Content-Type', 'text/plain')])
-    message = 'It works!\n'
-    version = 'Python %s\n' % sys.version.split()[0]
-    response = '\n'.join([message, version])
-    return [response.encode()]
+from django.core.wsgi import get_wsgi_application
+
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chicken_app.settings')
+
+application = get_wsgi_application()
