@@ -41,9 +41,14 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
 
     "user_profile",
+    "image_service",
     "equipment",
     "feed",
-    "image_service",
+    "poultry_products",
+    "stations_and_ward_rent",
+    "veterinary_medicine"
+
+
     
 
 ]
