@@ -41,7 +41,10 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
 
     "user_profile",
-
+    "equipment",
+    "feed",
+    "image_service",
+    
 
 ]
 
