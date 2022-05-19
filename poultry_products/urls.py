@@ -1,12 +1,11 @@
 from django.urls import include, path
-from poultry_products.views import(
+from poultry_products.views import (
     UpdateView,
     DeleteView,
     ListView,
     DetailView,
-    CreateView
-  
-)   
+    CreateView,
+)
 
 urlpatterns = [
     path(
