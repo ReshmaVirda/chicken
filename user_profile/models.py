@@ -2,8 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 
 # Create your models here.
-class Profile(models.Model):  # add this class and the following fields
+class Profile(models.Model):
+    """
+    add this class and the following fields
 
+    """
     user = models.OneToOneField(User, related_name="profile", on_delete=models.CASCADE)
     fcm_token = models.CharField(max_length=100, null=True, blank=True)
     profie_photo_url = models.FileField(null=True, blank=True)

@@ -14,7 +14,7 @@ class UserSerializer(serializers.ModelSerializer):
 
 class RegisterSerializer(serializers.Serializer):
 
-    mobile_no = serializers.CharField(required=False)
+    mobile_no = serializers.CharField(required=True)
     fcm_token = serializers.CharField(required=False)
 
     password = serializers.CharField(
