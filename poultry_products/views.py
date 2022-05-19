@@ -124,21 +124,29 @@ class ListView(generics.ListAPIView):
 class UpdateView(APIView):
     """ """
 
-    def post(self, request, id, format=None):
-        serializer = ProductSerializer(data=request.data)
+    def put(self, request, id, format=None):
+        try:
+            product = Product.objects.get(id=id)
+        except:
+            return Response(
+                {
+                    "success": False,
+                    "message": "id not found",
+                    "data": None,
+                    "errors": "id not found",
+                },
+                status=status.HTTP_404_NOT_FOUND,
+            )
+
+        serializer = ProductSerializer(product, data=request.data)
         if serializer.is_valid():
+            serializer.save()
 
             return Response(
                 {
                     "success": True,
-                    "message": "Profile Updated Successfully",
-                    "data": {
-                        "user_id": user.pk,
-                        "first_name": user.first_name,
-                        "last_name": user.last_name,
-                        "is_active": user.is_active,
-                        "role": user.profile.role,
-                    },
+                    "message": "Updated Successfully",
+                    "data": serializer.data,
                 },
                 status=status.HTTP_200_OK,
             )
