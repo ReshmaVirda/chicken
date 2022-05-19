@@ -20,6 +20,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("profile/", include("user_profile.urls")),
     path("api-auth/", include("rest_framework.urls")),
+    
+    path("equipment/", include("equipment.urls")),
+    path("feed/", include("feed.urls")),
+    path("poultry_products/", include("poultry_products.urls")),
+    path("stations_and_ward_rent/", include("stations_and_ward_rent.urls")),
+    path("veterinary_medicine/", include("veterinary_medicine.urls")),
+
 
 
 ]
