@@ -1,3 +1,4 @@
+from black import nullcontext
 from django.db import models
 
 
@@ -11,7 +12,7 @@ class ProductName(models.Model):
         return self.name
 
 
-class Category(models.Model):
+class Governorate(models.Model):
     name = models.CharField(max_length=200, db_index=True)
 
     class Meta:
@@ -21,7 +22,7 @@ class Category(models.Model):
         return self.name
 
 
-class Category(models.Model):
+class Region(models.Model):
     name = models.CharField(max_length=200, db_index=True)
 
     class Meta:
@@ -36,6 +37,7 @@ class Product(models.Model):
     image_file = models.ImageField(
         upload_to="products/%Y/%m/%d",
         blank=True,
+        null=True,
     )
     product_name = models.ForeignKey(
         ProductName, related_name="products", on_delete=models.CASCADE
@@ -50,7 +52,9 @@ class Product(models.Model):
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    address = models.TextField(blank=True)
+    location = models.TextField(blank=True)
+    region = models.ForeignKey(Region, on_delete=models.CASCADE)
+    governorate = models.ForeignKey(Governorate, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ("-created",)
