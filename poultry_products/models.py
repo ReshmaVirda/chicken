@@ -1,4 +1,3 @@
-from black import nullcontext
 from django.db import models
 
 
@@ -60,4 +59,4 @@ class Product(models.Model):
         ordering = ("-created",)
 
     def __str__(self):
-        return self.name
+        return self.other_product
