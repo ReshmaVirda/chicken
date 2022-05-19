@@ -86,59 +86,52 @@ class LogoutView(APIView):
             status=status.HTTP_200_OK,
         )
 
+
 class RegisterView(APIView):
     permission_classes = (AllowAny,)
 
     def post(self, request, format=None):
-
         serializer = RegisterSerializer(data=request.data)
         if serializer.is_valid():
-            
-
-            user_obj = User.objects.create(
-                username=request.data["mobile_no"],
-                email=request.data.get("mobile_no"),
-                first_name=request.data.get("first_name"),
-                last_name=request.data.get("last_name"),
-
-            )
-            user_obj.set_password(request.data["password"])
-            user_obj.save()
-
-            
             try:
-                
-                profile_obj = Profile.objects.filter(user=user_obj)
-
-                profile_obj.update(
-                    is_registred=True,
+                user_obj = User.objects.create(
+                    username=request.data["mobile_no"],
+                    email=request.data.get("mobile_no"),
+                    first_name=request.data.get("first_name"),
+                    last_name=request.data.get("last_name"),
                 )
-                profile = Profile.objects.get(user=user_obj)
-
-            except:
-
+                user_obj.set_password(request.data["password"])
+                user_obj.save()
                 profile = Profile.objects.create(
                     user=user_obj,
                     is_registred=True,
                 )
-                
-
-            return Response(
-                {
-                    "success": True,
-                    "message": "User Registered Successfully",
-                    "data": {
-                        "user_id": user_obj.pk,
-                        "first_name": user_obj.first_name,
-                        "last_name": user_obj.last_name,
-                        "is_active": user_obj.is_active,
-                        "is_registred": profile.is_registred,
-                        "fcm_token": profile.fcm_token,
-                        
+                return Response(
+                    {
+                        "success": True,
+                        "message": "User Registered Successfully",
+                        "data": {
+                            "user_id": user_obj.pk,
+                            "first_name": user_obj.first_name,
+                            "last_name": user_obj.last_name,
+                            "is_active": user_obj.is_active,
+                            "is_registred": profile.is_registred,
+                            "fcm_token": profile.fcm_token,
+                        },
                     },
-                },
-                status=status.HTTP_200_OK,
-            )
+                    status=status.HTTP_200_OK,
+                )
+            except:
+                return Response(
+                    {
+                        "success": False,
+                        "message": "user already exists with same mobile no ",
+                        "data": None,
+                        "errors": "user already exists with same mobile no ",
+                    },
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+
         else:
             return Response(
                 {
