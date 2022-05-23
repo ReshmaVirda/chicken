@@ -30,3 +30,7 @@ urlpatterns = [
 
 
 ]
+
+admin.site.site_header = "Chicken Backend"  # default: "Django Administration"
+admin.site.index_title = "Chicken Backend"  # default: "Site administration"
+admin.site.site_title = "Chicken Backend"  # default: "Django site admin"
