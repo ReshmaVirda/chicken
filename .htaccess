@@ -1,9 +1,12 @@
+<IfModule Litespeed>
+</IfModule>
+# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION BEGIN
 PassengerAppRoot "/home/vmjsoftw/chickenapp.vmjsoftware.in"
 PassengerBaseURI "/"
-PassengerPython "/home/vmjsoftw/virtualenv/chickenapp.vmjsoftware.in/3.7/bin/python"
+PassengerPython "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/bin/python3.7"
+>>>>>>> 8d29351 (delete it)
 # DO NOT REMOVE. CLOUDLINUX PASSENGER CONFIGURATION END
 # DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION BEGIN
 <IfModule Litespeed>
 </IfModule>
-# DO NOT REMOVE OR MODIFY. CLOUDLINUX ENV VARS CONFIGURATION END
