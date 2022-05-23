@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from rest_framework.permissions import AllowAny
 
 from rest_framework.views import APIView
 from rest_framework import status
@@ -7,6 +8,8 @@ from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework import generics
 from django.contrib.auth.models import User
+from user_profile.models import Profile
+from user_profile.serializers import RegisterSerializer
 from django.conf import settings
 
 # Create your views here.
@@ -82,3 +85,60 @@ class LogoutView(APIView):
             {"success": True, "message": "successfully logout", "data": None},
             status=status.HTTP_200_OK,
         )
+
+
+class RegisterView(APIView):
+    permission_classes = (AllowAny,)
+
+    def post(self, request, format=None):
+        serializer = RegisterSerializer(data=request.data)
+        if serializer.is_valid():
+            try:
+                user_obj = User.objects.create(
+                    username=request.data["mobile_no"],
+                    email=request.data.get("mobile_no"),
+                    first_name=request.data.get("first_name"),
+                    last_name=request.data.get("last_name"),
+                )
+                user_obj.set_password(request.data["password"])
+                user_obj.save()
+                profile = Profile.objects.create(
+                    user=user_obj,
+                    is_registred=True,
+                )
+                return Response(
+                    {
+                        "success": True,
+                        "message": "User Registered Successfully",
+                        "data": {
+                            "user_id": user_obj.pk,
+                            "first_name": user_obj.first_name,
+                            "last_name": user_obj.last_name,
+                            "is_active": user_obj.is_active,
+                            "is_registred": profile.is_registred,
+                            "fcm_token": profile.fcm_token,
+                        },
+                    },
+                    status=status.HTTP_200_OK,
+                )
+            except:
+                return Response(
+                    {
+                        "success": False,
+                        "message": "user already exists with same mobile no ",
+                        "data": None,
+                        "errors": "user already exists with same mobile no ",
+                    },
+                    status=status.HTTP_400_BAD_REQUEST,
+                )
+
+        else:
+            return Response(
+                {
+                    "success": False,
+                    "message": failure_error(serializer.errors),
+                    "data": None,
+                    "errors": serializer.errors,
+                },
+                status=status.HTTP_400_BAD_REQUEST,
+            )
