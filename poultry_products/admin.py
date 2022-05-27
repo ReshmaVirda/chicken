@@ -18,7 +18,7 @@ class ProductAdmin(admin.ModelAdmin):
 @admin.register(Region)
 class RegionAdmin(admin.ModelAdmin):
 
-    list_display = [field.name for field in Region._meta.get_fields()]
+    list_display = []
 
     search_fields = list_display
 
@@ -29,7 +29,7 @@ class RegionAdmin(admin.ModelAdmin):
 @admin.register(Governorate)
 class GovernorateAdmin(admin.ModelAdmin):
 
-    list_display = [field.name for field in Governorate._meta.get_fields()]
+    list_display = []
 
     search_fields = list_display
 
