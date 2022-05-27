@@ -87,7 +87,7 @@ class LogoutView(APIView):
         )
 
 
-class RegisterView(APIView):
+class RegisterView(ObtainAuthToken,APIView):
     permission_classes = (AllowAny,)
 
     def post(self, request, format=None):
@@ -100,17 +100,30 @@ class RegisterView(APIView):
                     first_name=request.data.get("first_name"),
                     last_name=request.data.get("last_name"),
                 )
+                request.data["username"] = request.data["mobile_no"]
+                
                 user_obj.set_password(request.data["password"])
                 user_obj.save()
                 profile = Profile.objects.create(
                     user=user_obj,
                     is_registred=True,
                 )
+
+                serializer = self.serializer_class(
+                    data=request.data, context={"request": request}
+                )
+                serializer.is_valid(raise_exception=True)
+
+                token, created = Token.objects.get_or_create(user=user_obj)
+
+
                 return Response(
                     {
                         "success": True,
                         "message": "User Registered Successfully",
                         "data": {
+                            "token": token.key,
+
                             "user_id": user_obj.pk,
                             "first_name": user_obj.first_name,
                             "last_name": user_obj.last_name,
