@@ -4,7 +4,7 @@ from stations_and_ward_rent.models import StationAndWard
 @admin.register(StationAndWard)
 class StationAndWardAdmin(admin.ModelAdmin):
 
-    list_display = ["name",]
+    list_display = ["product_name",]
 
     search_fields = list_display
 

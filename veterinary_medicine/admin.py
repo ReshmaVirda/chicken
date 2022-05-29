@@ -9,7 +9,7 @@ from veterinary_medicine.models import   VeterinaryMadicine
 @admin.register(VeterinaryMadicine)
 class VeterinaryMadicineAdmin(admin.ModelAdmin):
 
-    list_display = ["name",]
+    list_display = ["product_name",]
 
     search_fields = list_display
 
