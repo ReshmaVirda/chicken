@@ -155,3 +155,40 @@ class RegisterView(ObtainAuthToken,APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
+
+
+class UserAPIView(APIView):
+    """
+    ME API
+    """
+
+    def get(self, request, format=None):
+
+        user = request.user
+
+        return Response(
+            {
+                "success": True,
+                "message": "data retrieved",
+                "data": {
+                    "user_id": user.pk,
+                    
+                    "first_name": user.first_name,
+                    "last_name": user.last_name,
+                    "is_active": user.is_active,
+                    
+                    # "is_registred": request.user.profile.is_registred,
+                    "fcm_token": request.user.profile.fcm_token,
+                    "profie_photo_url": get_path(request.user.profile, request),
+                    "role": request.user.profile.role,
+                    "mobile_no": request.user.username,
+                },
+            },
+            status=status.HTTP_200_OK,
+        )
+def get_path(profile, request):
+
+    if profile.image_url:
+        return request.build_absolute_uri(profile.profie_photo_url.url)
+    else:
+        return None

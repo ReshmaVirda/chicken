@@ -7,6 +7,13 @@ class Profile(models.Model):
     add this class and the following fields
 
     """
+
+    ROLES = (
+        ("BREEDER", "BREEDER"),
+        ("MERCHANT", "MERCHANT"),
+        ("OTHER", "OTHER"),
+
+    )
     user = models.OneToOneField(User, related_name="profile", on_delete=models.CASCADE)
     fcm_token = models.CharField(max_length=100, null=True, blank=True)
     profie_photo_url = models.FileField(null=True, blank=True)
@@ -14,6 +21,7 @@ class Profile(models.Model):
     updated_at = models.DateTimeField(auto_now=True)
     otp = models.IntegerField(default=1234)
     is_registred = models.BooleanField(default=False)
+    role = models.CharField(max_length=20, choices=ROLES, default="BREEDER")
 
     class Meta:
         ordering = ("-created_at",)
