@@ -12,6 +12,12 @@ class UserSerializer(serializers.ModelSerializer):
         fields = ["username", "email", "groups", "first_name", "last_name", "is_active"]
 
 
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = fields = ("profile_photo_url",)
+
+
 class RegisterSerializer(serializers.Serializer):
 
     mobile_no = serializers.CharField(required=True)

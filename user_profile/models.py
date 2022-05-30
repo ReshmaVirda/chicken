@@ -16,7 +16,7 @@ class Profile(models.Model):
     )
     user = models.OneToOneField(User, related_name="profile", on_delete=models.CASCADE)
     fcm_token = models.CharField(max_length=100, null=True, blank=True)
-    profie_photo_url = models.FileField(null=True, blank=True)
+    profile_photo_url = models.FileField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     otp = models.IntegerField(default=1234)
@@ -31,7 +31,7 @@ class Profile(models.Model):
 
     @property
     def image_url(self):
-        if self.profie_photo_url and hasattr(self.profie_photo_url, "url"):
-            return self.profie_photo_url.url
+        if self.profile_photo_url and hasattr(self.profile_photo_url, "url"):
+            return self.profile_photo_url.url
         else:
             return None

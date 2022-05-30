@@ -9,7 +9,7 @@ from rest_framework.response import Response
 from rest_framework import generics
 from django.contrib.auth.models import User
 from user_profile.models import Profile
-from user_profile.serializers import RegisterSerializer
+from user_profile.serializers import RegisterSerializer, ProfileSerializer
 from django.conf import settings
 
 # Create your views here.
@@ -40,7 +40,7 @@ class CustomAuthToken(ObtainAuthToken):
                         "last_name": user.last_name,
                         "is_active": user.is_active,
                         "fcm_token": user.profile.fcm_token,
-                        "profie_photo_url": get_path(user.profile, request),
+                        "profile_photo_url": get_path(user.profile, request),
                     },
                 },
                 status=status.HTTP_200_OK,
@@ -68,7 +68,7 @@ def failure_error(ordered_errors):
 def get_path(profile, request):
 
     if profile.image_url:
-        return request.build_absolute_uri(profile.profie_photo_url.url)
+        return request.build_absolute_uri(profile.profile_photo_url.url)
     else:
         return None
 
@@ -179,7 +179,7 @@ class UserAPIView(APIView):
                     
                     # "is_registred": request.user.profile.is_registred,
                     "fcm_token": request.user.profile.fcm_token,
-                    "profie_photo_url": get_path(request.user.profile, request),
+                    "profile_photo_url": get_path(request.user.profile, request),
                     "role": request.user.profile.role,
                     "mobile_no": request.user.username,
                 },
@@ -189,6 +189,39 @@ class UserAPIView(APIView):
 def get_path(profile, request):
 
     if profile.image_url:
-        return request.build_absolute_uri(profile.profie_photo_url.url)
+        return request.build_absolute_uri(profile.profile_photo_url.url)
     else:
         return None
+from rest_framework import parsers
+
+class FileUploadView(APIView):
+    permission_classes = []
+    parser_class = (parsers.FileUploadParser,)
+
+    def post(self, request, *args, **kwargs):
+        profile = Profile.objects.get(user=request.user)
+        file_serializer = ProfileSerializer(profile, data=request.data)
+        if file_serializer.is_valid():
+            file_serializer.save()
+            
+            return Response(
+                {
+                    "success": True,
+                    "message": "profile photo uploaded",
+                    "data": {
+                        "profile_photo_url": get_path(request.user.profile, request),
+                    },
+                },
+                status=status.HTTP_200_OK,
+            )
+
+        else:
+            return Response(
+                {
+                    "success": False,
+                    "message": str(failure_error(file_serializer.errors)),
+                    "data": None,
+                    "errors": file_serializer.errors,
+                },
+                status=status.HTTP_400_BAD_REQUEST,
+            )
