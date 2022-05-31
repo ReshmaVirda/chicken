@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 from poultry_products.models import Region, Governorate
+from image_service.models import ImageFile
 class StationAndWard(models.Model):
 
     image_file = models.OneToOneField(

@@ -30,7 +30,7 @@ class Region(models.Model):
     def __str__(self):
         return self.name
 
-
+from image_service.models import ImageFile
 class Product(models.Model):
 
     image_file = models.OneToOneField(
