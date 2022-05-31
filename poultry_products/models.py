@@ -14,8 +14,8 @@ class ImageFile(models.Model):
         blank=True,
         
     )
-    def _str_(self):
-        return self.file_url
+    def __str__(self):
+        return str(self.file_url)+str(self.created_at)
 
     @property
     def image_url(self):
