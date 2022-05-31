@@ -8,7 +8,8 @@ class ProductFeed(models.Model):
 
     image_file = models.OneToOneField(
         ImageFile,
-        on_delete=models.CASCADE
+        on_delete=models.CASCADE,
+        null=True,
     )
 
     product_name = models.CharField(max_length=200, db_index=True)

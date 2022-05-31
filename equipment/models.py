@@ -4,11 +4,12 @@ from django.urls import reverse
 from poultry_products.models import Region, Governorate
 class ProductEquipment(models.Model):
 
-    image_file = models.ImageField(
-        upload_to="products/%Y/%m/%d",
-        blank=True,
+    image_file = models.OneToOneField(
+        ImageFile,
+        on_delete=models.CASCADE,
         null=True,
     )
+
 
     product_name = models.CharField(max_length=200, db_index=True)
 

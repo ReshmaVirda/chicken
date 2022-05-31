@@ -4,11 +4,12 @@ from django.db import models
 from poultry_products.models import Region, Governorate
 class StationAndWard(models.Model):
 
-    image_file = models.ImageField(
-        upload_to="products/%Y/%m/%d",
-        blank=True,
+    image_file = models.OneToOneField(
+        ImageFile,
+        on_delete=models.CASCADE,
         null=True,
     )
+
     TYPE = (
         ("FOR_RENT", "FOR_RENT"),
         ("FOR_SALE", "FOR_SALE"),

@@ -7,9 +7,9 @@ from django.urls import reverse
 from poultry_products.models import Region, Governorate
 class VeterinaryMadicine(models.Model):
 
-    image_file = models.ImageField(
-        upload_to="products/%Y/%m/%d",
-        blank=True,
+    image_file = models.OneToOneField(
+        ImageFile,
+        on_delete=models.CASCADE,
         null=True,
     )
 

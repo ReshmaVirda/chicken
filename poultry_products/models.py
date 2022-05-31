@@ -33,11 +33,12 @@ class Region(models.Model):
 
 class Product(models.Model):
 
-    image_file = models.ImageField(
-        upload_to="products/%Y/%m/%d",
-        blank=True,
+    image_file = models.OneToOneField(
+        ImageFile,
+        on_delete=models.CASCADE,
         null=True,
     )
+
     product_name = models.ForeignKey(
         ProductName, related_name="products", on_delete=models.CASCADE
     )

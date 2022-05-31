@@ -11,7 +11,11 @@ class ImageFile(models.Model):
     class Meta:
         ordering = ("-created_at",)
 
-    file_url = models.FileField()
+    file_url = models.FileField(
+        upload_to="products/%Y/%m/%d",
+        blank=True,
+        null=True,
+    )
     def _str_(self):
         return self.file_url
 
