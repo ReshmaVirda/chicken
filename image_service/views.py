@@ -25,7 +25,7 @@ class FileUploadView(APIView):
             return Response(
                 {
                     "success": True,
-                    "message": "profile photo uploaded",
+                    "message": "image uploaded",
                     "data":  file_serializer.data,
                     
                 },
