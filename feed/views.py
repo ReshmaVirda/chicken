@@ -72,8 +72,10 @@ class ListView(generics.ListAPIView):
     """
 
     serializer_class = ProductFeedSerializer
-    # filter_backends = (DjangoFilterBackend,)  # SearchFilter
-    # filter_fields = ("status",)
+    filter_backends = (DjangoFilterBackend,)  # SearchFilter
+    filter_fields = ("product_name",)
+    search_fields = ['username', 'email']
+
 
     def get_queryset(self):
 

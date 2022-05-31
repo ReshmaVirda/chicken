@@ -24,8 +24,8 @@ class StationAndWard(models.Model):
     
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
-    governorate = models.ForeignKey(Governorate, on_delete=models.CASCADE)
-    region = models.ForeignKey(Region, on_delete=models.CASCADE)
+    governorate = models.ForeignKey(Governorate, on_delete=models.CASCADE,blank=True,null=True)
+    region = models.ForeignKey(Region, on_delete=models.CASCADE,blank=True,null=True)
     location = models.TextField(blank=True)
 
     class Meta:
