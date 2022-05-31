@@ -1,4 +1,3 @@
-import black
 from django.db import models
 class ImageFile(models.Model):
     """
@@ -13,7 +12,7 @@ class ImageFile(models.Model):
     file_url = models.FileField(
         upload_to="products/%Y/%m/%d",
         blank=True,
-        null=True,
+        
     )
     def _str_(self):
         return self.file_url

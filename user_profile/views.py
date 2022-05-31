@@ -7,6 +7,7 @@ from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.authtoken.models import Token
 from rest_framework.response import Response
 from rest_framework import generics
+from rest_framework import parsers
 from django.contrib.auth.models import User
 from user_profile.models import Profile
 from user_profile.serializers import RegisterSerializer, ProfileSerializer
@@ -186,7 +187,6 @@ class UserAPIView(APIView):
             },
             status=status.HTTP_200_OK,
         )
-from rest_framework import parsers
 
 class FileUploadView(APIView):
     permission_classes = []
