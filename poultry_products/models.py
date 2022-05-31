@@ -1,3 +1,4 @@
+import black
 from django.db import models
 class ImageFile(models.Model):
     """
@@ -64,7 +65,7 @@ class Product(models.Model):
     )
 
     product_name = models.ForeignKey(
-        ProductName, related_name="products", on_delete=models.CASCADE
+        ProductName, related_name="products", on_delete=models.CASCADE, null=True,blank=True
     )
     other_product = models.CharField(max_length=200, db_index=True)
 
