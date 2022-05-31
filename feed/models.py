@@ -1,9 +1,6 @@
-
 from django.db import models
-
 from django.urls import reverse
-from poultry_products.models import Region, Governorate
-from image_service.models import ImageFile
+from poultry_products.models import Region, Governorate, ImageFile
 class ProductFeed(models.Model):
 
     image_file = models.OneToOneField(
@@ -13,10 +10,7 @@ class ProductFeed(models.Model):
     )
 
     product_name = models.CharField(max_length=200, db_index=True)
-
-    
     price_per_ton = models.DecimalField(max_digits=10, decimal_places=2)
-    
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)

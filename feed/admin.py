@@ -13,3 +13,8 @@ class ProductFeedAdmin(admin.ModelAdmin):
 
     list_filter = list_display
     list_per_page = 300  # No of records per page
+
+
+from feed.models import ImageFile
+
+admin.site.register(ImageFile)

@@ -1,4 +1,28 @@
 from django.db import models
+class ImageFile(models.Model):
+    """
+    add this class and the following fields
+    """
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    class Meta:
+        ordering = ("-created_at",)
+
+    file_url = models.FileField(
+        upload_to="products/%Y/%m/%d",
+        blank=True,
+        null=True,
+    )
+    def _str_(self):
+        return self.file_url
+
+    @property
+    def image_url(self):
+        if self.file_url and hasattr(self.file_url, 'url'):
+            return self.file_url.url
+        else:
+            return None
 
 
 class ProductName(models.Model):
@@ -30,7 +54,7 @@ class Region(models.Model):
     def __str__(self):
         return self.name
 
-from image_service.models import ImageFile
+
 class Product(models.Model):
 
     image_file = models.OneToOneField(

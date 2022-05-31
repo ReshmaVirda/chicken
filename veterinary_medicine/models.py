@@ -4,8 +4,8 @@ from django.db import models
 from django.db import models
 
 from django.urls import reverse
-from poultry_products.models import Region, Governorate
-from image_service.models import ImageFile
+from poultry_products.models import Region, Governorate, ImageFile
+from feed.models import ImageFile
 class VeterinaryMadicine(models.Model):
 
     image_file = models.OneToOneField(
