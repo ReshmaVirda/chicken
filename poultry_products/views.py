@@ -13,6 +13,7 @@ from poultry_products.serializers import (
     ProductSerializer,
     ProductNameSerializer,
 )
+from rest_framework.permissions import AllowAny
 
 
 class CreateView(APIView):
@@ -41,6 +42,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+    permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
         try:
@@ -68,6 +70,7 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
+    permission_classes = (AllowAny,)
 
     serializer_class = ProductSerializer
     # filter_backends = (DjangoFilterBackend,)  # SearchFilter

@@ -4,6 +4,8 @@ from rest_framework import status
 from rest_framework import generics
 from django.contrib.auth.models import User
 from rest_framework.views import APIView
+from rest_framework.permissions import AllowAny
+
 from django_filters.rest_framework import DjangoFilterBackend
 from poultry_products.serializers import (
     GovernorateSerializer,
@@ -43,6 +45,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+    permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
         try:
@@ -70,6 +73,7 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
+    permission_classes = (AllowAny,)
 
     serializer_class = ProductFeedSerializer
     filter_backends = (DjangoFilterBackend,)  # SearchFilter

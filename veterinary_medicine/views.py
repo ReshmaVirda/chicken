@@ -11,6 +11,8 @@ from poultry_products.serializers import (
     
     
 )
+from rest_framework.permissions import AllowAny
+
 from veterinary_medicine.serializers import (
     
     
@@ -43,6 +45,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+    permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
         try:
@@ -70,7 +73,7 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
-
+    permission_classes = (AllowAny,)
     serializer_class = VeterinaryMadicineSerializer
     # filter_backends = (DjangoFilterBackend,)  # SearchFilter
     # filter_fields = ("status",)
