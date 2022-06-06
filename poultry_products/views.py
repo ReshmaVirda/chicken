@@ -42,6 +42,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+
     permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
@@ -70,6 +71,7 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
+
     permission_classes = (AllowAny,)
 
     serializer_class = ProductSerializer

@@ -8,26 +8,27 @@ from rest_framework.response import Response
 from rest_framework import generics
 from django.contrib.auth.models import User
 from user_profile.models import Profile
-from image_service.serializers import  ImageFileSerializer
+from image_service.serializers import ImageFileSerializer
 from django.conf import settings
 from rest_framework import parsers
 from poultry_products.views import failure_error
+
+
 class FileUploadView(APIView):
 
-    parser_class = (parsers.FileUploadParser)
+    parser_class = parsers.FileUploadParser
 
     def post(self, request, *args, **kwargs):
-        
+
         file_serializer = ImageFileSerializer(data=request.data)
         if file_serializer.is_valid():
             obj = file_serializer.save()
-            
+
             return Response(
                 {
                     "success": True,
                     "message": "profile photo uploaded",
-                    "data":  file_serializer.data,
-                    
+                    "data": file_serializer.data,
                 },
                 status=status.HTTP_200_OK,
             )

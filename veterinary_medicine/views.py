@@ -8,16 +8,11 @@ from django_filters.rest_framework import DjangoFilterBackend
 from poultry_products.serializers import (
     GovernorateSerializer,
     RegionSerializer,
-    
-    
 )
 from rest_framework.permissions import AllowAny
 
-from veterinary_medicine.serializers import (
-    
-    
-    VeterinaryMadicineSerializer
-)
+from veterinary_medicine.serializers import VeterinaryMadicineSerializer
+
 
 class CreateView(APIView):
     """
@@ -45,6 +40,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+
     permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
@@ -73,6 +69,7 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
+
     permission_classes = (AllowAny,)
     serializer_class = VeterinaryMadicineSerializer
     # filter_backends = (DjangoFilterBackend,)  # SearchFilter
