@@ -32,3 +32,8 @@ class VeterinaryMadicine(models.Model):
 
     def __str__(self):
         return self.product_name
+    @property
+    def get_image_url(self):
+        if self.image_file:
+            if self.image_file.image_url:
+                return self.image_file.image_url
