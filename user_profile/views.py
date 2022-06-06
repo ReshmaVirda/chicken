@@ -66,14 +66,6 @@ def failure_error(ordered_errors):
     return ordered_errors.get(errors[0])[0]
 
 
-def get_path(profile, request):
-
-    if profile.image_url:
-        return request.build_absolute_uri(profile.profile_photo_url.url)
-    else:
-        return None
-
-
 class LogoutView(APIView):
     """ """
 
@@ -180,7 +172,7 @@ class UserAPIView(APIView):
                     
                     # "is_registred": request.user.profile.is_registred,
                     "fcm_token": request.user.profile.fcm_token,
-                    "profile_photo_url": get_path(request.user.profile, request),
+                    "profile_photo_url": request.user.profile.image_url,
                     "role": request.user.profile.role,
                     "mobile_no": request.user.username,
                 },
@@ -203,7 +195,7 @@ class FileUploadView(APIView):
                     "success": True,
                     "message": "profile photo uploaded",
                     "data": {
-                        "profile_photo_url": get_path(request.user.profile, request),
+                        "profile_photo_url": request.user.profile.image_url,
                     },
                 },
                 status=status.HTTP_200_OK,
