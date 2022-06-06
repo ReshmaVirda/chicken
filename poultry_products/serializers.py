@@ -6,6 +6,8 @@ from rest_framework import serializers
 from poultry_products.models import Region, Governorate, Product, ProductName
 
 class ProductSerializer(serializers.ModelSerializer):
+    get_image_url = serializers.ReadOnlyField()
+
     class Meta:
         model = Product
         fields = '__all__'

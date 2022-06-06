@@ -10,15 +10,10 @@ from rest_framework.permissions import AllowAny
 from poultry_products.serializers import (
     GovernorateSerializer,
     RegionSerializer,
-    
-    
 )
 
-from equipment.serializers import (
-    
-    
-    ProductEquipmentSerializer
-)
+from equipment.serializers import ProductEquipmentSerializer
+
 
 class CreateView(APIView):
     """
@@ -46,6 +41,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+
     permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
@@ -74,8 +70,8 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
-    permission_classes = (AllowAny,)
 
+    permission_classes = (AllowAny,)
 
     serializer_class = ProductEquipmentSerializer
     # filter_backends = (DjangoFilterBackend,)  # SearchFilter

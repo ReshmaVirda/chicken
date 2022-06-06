@@ -14,6 +14,8 @@ from rest_framework import serializers
 from equipment.models import  ProductEquipment
 
 class ProductEquipmentSerializer(serializers.ModelSerializer):
+    get_image_url = serializers.ReadOnlyField()
+
     class Meta:
         model = ProductEquipment
         fields = '__all__'

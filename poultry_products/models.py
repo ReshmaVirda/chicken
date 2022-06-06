@@ -85,6 +85,7 @@ class Product(models.Model):
 
     def __str__(self):
         return self.other_product
+    @property
     def get_image_url(self):
         if self.image_file:
             if self.image_file.image_url:

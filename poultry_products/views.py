@@ -42,6 +42,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+
     permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
@@ -70,6 +71,7 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
+
     permission_classes = (AllowAny,)
 
     serializer_class = ProductSerializer
@@ -105,6 +107,7 @@ class ListView(generics.ListAPIView):
                 page = 1
             paginate_queryset = self.paginate_queryset(queryset)
             serializer = self.serializer_class(paginate_queryset, many=True)
+            
             tmp = serializer.data
             response = self.get_paginated_response(tmp)
             response.data["success"] = True
@@ -123,6 +126,12 @@ class ListView(generics.ListAPIView):
                 status=status.HTTP_404_NOT_FOUND,
             )
 
+def get_path(profile, request):
+
+    if profile.image_url:
+        return request.build_absolute_uri(profile.profile_photo_url.url)
+    else:
+        return None
 
 class UpdateView(APIView):
     """ """

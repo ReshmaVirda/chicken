@@ -9,14 +9,9 @@ from django_filters.rest_framework import DjangoFilterBackend
 from poultry_products.serializers import (
     GovernorateSerializer,
     RegionSerializer,
-    
-    
 )
-from stations_and_ward_rent.serializers import (
-    
-    
-    StationAndWardSerializer
-)
+from stations_and_ward_rent.serializers import StationAndWardSerializer
+
 
 class CreateView(APIView):
     """
@@ -44,6 +39,7 @@ class CreateView(APIView):
 
 class DetailView(APIView):
     """ """
+
     permission_classes = (AllowAny,)
 
     def get(self, request, id, format=None):
@@ -72,6 +68,7 @@ class ListView(generics.ListAPIView):
     """
     List all.
     """
+
     permission_classes = (AllowAny,)
 
     serializer_class = StationAndWardSerializer
