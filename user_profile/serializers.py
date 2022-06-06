@@ -15,7 +15,7 @@ class UserSerializer(serializers.ModelSerializer):
 class ProfileSerializer(serializers.ModelSerializer):
     class Meta:
         model = Profile
-        fields = fields = ("profile_photo_url",)
+        fields = fields = ("profile_photo_url","id")
 
 
 class RegisterSerializer(serializers.Serializer):

@@ -181,21 +181,22 @@ class UserAPIView(APIView):
         )
 
 class FileUploadView(APIView):
-    permission_classes = []
+
     parser_class = (parsers.FileUploadParser,)
 
     def post(self, request, *args, **kwargs):
         profile = Profile.objects.get(user=request.user)
+
         file_serializer = ProfileSerializer(profile, data=request.data)
         if file_serializer.is_valid():
-            file_serializer.save()
+            profile =file_serializer.save()
             
             return Response(
                 {
                     "success": True,
                     "message": "profile photo uploaded",
                     "data": {
-                        "profile_photo_url": request.user.profile.image_url,
+                        "profile_photo_url": profile.image_url,
                     },
                 },
                 status=status.HTTP_200_OK,
