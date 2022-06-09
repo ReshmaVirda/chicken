@@ -7,7 +7,7 @@ class ImageFile(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    creator = models.ForeignKey(User, on_delete=models.CASCADE,blank=True,null=True)
+    
     class Meta:
         ordering = ("-created_at",)
 
@@ -64,6 +64,7 @@ class Product(models.Model):
         on_delete=models.CASCADE,
         null=True,
     )
+    creator = models.ForeignKey(User, on_delete=models.CASCADE,blank=True,null=True)
 
     product_name = models.ForeignKey(
         ProductName, related_name="products", on_delete=models.CASCADE, null=True,blank=True
