@@ -1,6 +1,14 @@
 from django.contrib import admin
 from django.urls import path
-from user_profile.views import CustomAuthToken, LogoutView,RegisterView, UserAPIView, FileUploadView
+from user_profile.views import (
+    CustomAuthToken,
+    LogoutView,
+    RegisterView,
+    UserAPIView,
+    FileUploadView,
+    
+)
+from user_profile.views import ForgotPasswordRequest,ForgotPasswordView
 from django.urls import include, path
 
 urlpatterns = [
@@ -11,5 +19,13 @@ urlpatterns = [
     path(
         "profile-image-upload/",
         FileUploadView.as_view(),
+    ),
+    path(
+        "forgot-password-request/",
+        ForgotPasswordRequest.as_view(),
+    ),
+    path(
+        "forgot-password/",
+        ForgotPasswordView.as_view(),
     ),
 ]

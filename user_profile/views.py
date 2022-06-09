@@ -1,3 +1,4 @@
+from cmath import exp
 from django.shortcuts import render
 from rest_framework.permissions import AllowAny
 
@@ -212,3 +213,58 @@ class FileUploadView(APIView):
                 },
                 status=status.HTTP_400_BAD_REQUEST,
             )
+
+
+class ForgotPasswordRequest(APIView):
+    """ """
+    permission_classes = (AllowAny,)
+    def post(self, request, format=None):
+
+        return Response(
+            {
+                "success": True,
+                "message": "Sent OTP successfully",
+                "data": {"otp": 1234},
+            },
+            status=status.HTTP_200_OK,
+        )
+
+
+class ForgotPasswordView(APIView):
+
+    """
+    user create
+    """
+
+    permission_classes = (AllowAny,)
+
+    def post(self, request, format=None):
+
+
+        try:
+            user = User.objects.get(username=request.data["mobile_no"])
+            if request.data["otp"]!=user.profile.otp:
+                raise Exception
+            user.set_password(request.data["password"])
+            user.save()
+            return Response(
+                {
+                    "success": True,
+                    "message": "Password changed successfully.",
+                    "data": [],
+                },
+                status=status.HTTP_200_OK,
+            )
+
+        except  Exception as e:
+
+            return Response(
+                {
+                    "success": False,
+                    "message": "Please add password",
+                    "data": None,
+                    "errors": str(e),
+                },
+                status=status.HTTP_400_BAD_REQUEST,
+            )
+
