@@ -21,6 +21,7 @@ class CreateView(APIView):
     """
 
     def post(self, request, format=None):
+        request.data["creator"] = request.user
         serializer = VeterinaryMadicineSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()

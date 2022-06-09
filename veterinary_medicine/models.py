@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 from django.db import models
+from django.contrib.auth.models import User
 
 from django.urls import reverse
 from poultry_products.models import Region, Governorate, ImageFile
@@ -13,7 +14,7 @@ class VeterinaryMadicine(models.Model):
         on_delete=models.CASCADE,
         null=True,
     )
-
+    creator = models.ForeignKey(User, on_delete=models.CASCADE,blank=True,null=True)
     product_name = models.CharField(max_length=200, db_index=True)
     description = models.TextField(blank=True)
 

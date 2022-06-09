@@ -1,5 +1,5 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 # Create your models here.
 from poultry_products.models import Region, Governorate
 from feed.models import ImageFile
@@ -23,7 +23,7 @@ class StationAndWard(models.Model):
     
     total_space = models.DecimalField(max_digits=10, decimal_places=2)
     
-    
+    creator = models.ForeignKey(User, on_delete=models.CASCADE,blank=True,null=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     governorate = models.ForeignKey(Governorate, on_delete=models.CASCADE,blank=True,null=True)
