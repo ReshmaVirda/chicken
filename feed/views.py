@@ -25,7 +25,7 @@ class CreateView(APIView):
     """
 
     def post(self, request, format=None):
-        request.data["creator"] = request.user
+        request.data["creator"] = request.user.id
         serializer = ProductFeedSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
