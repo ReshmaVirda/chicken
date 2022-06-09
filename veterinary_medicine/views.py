@@ -5,6 +5,7 @@ from rest_framework import generics
 from django.contrib.auth.models import User
 from rest_framework.views import APIView
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework import filters
 from poultry_products.serializers import (
     GovernorateSerializer,
     RegionSerializer,
@@ -72,8 +73,10 @@ class ListView(generics.ListAPIView):
 
     permission_classes = (AllowAny,)
     serializer_class = VeterinaryMadicineSerializer
-    # filter_backends = (DjangoFilterBackend,)  # SearchFilter
-    # filter_fields = ("status",)
+    # filter_backends = (DjangoFilterBackend,filters.SearchFilter)  # SearchFilter
+    # filter_fields = ("product_name",)
+    
+    # search_fields = ('product_name',)
 
     def get_queryset(self):
 

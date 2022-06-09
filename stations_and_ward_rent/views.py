@@ -73,7 +73,7 @@ class ListView(generics.ListAPIView):
 
     serializer_class = StationAndWardSerializer
     # filter_backends = (DjangoFilterBackend,)  # SearchFilter
-    # filter_fields = ("status",)
+    # filter_fields = ("product_name",)
 
     def get_queryset(self):
 
