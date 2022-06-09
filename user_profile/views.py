@@ -41,7 +41,7 @@ class CustomAuthToken(ObtainAuthToken):
                         "last_name": user.last_name,
                         "is_active": user.is_active,
                         "fcm_token": user.profile.fcm_token,
-                        "profile_photo_url": get_path(user.profile, request),
+                        "profile_photo_url": user.profile.image_url,
                     },
                 },
                 status=status.HTTP_200_OK,

@@ -127,12 +127,6 @@ class ListView(generics.ListAPIView):
                 status=status.HTTP_404_NOT_FOUND,
             )
 
-def get_path(profile, request):
-
-    if profile.image_url:
-        return request.build_absolute_uri(profile.profile_photo_url.url)
-    else:
-        return None
 
 class UpdateView(APIView):
     """ """
