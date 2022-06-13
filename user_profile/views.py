@@ -124,6 +124,7 @@ class RegisterView(ObtainAuthToken,APIView):
                             "is_active": user_obj.is_active,
                             "is_registred": profile.is_registred,
                             "fcm_token": profile.fcm_token,
+                            "profile_photo_url":None
                         },
                     },
                     status=status.HTTP_200_OK,
