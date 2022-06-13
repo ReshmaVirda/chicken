@@ -26,7 +26,7 @@ class CreateView(APIView):
         if serializer.is_valid():
             serializer.save()
             return Response(
-                {"success": True, "message": "data retrieved", "data": serializer.data},
+                {"success": True, "message": "Successfully Created", "data": serializer.data},
                 status=status.HTTP_200_OK,
             )
         return Response(
@@ -195,7 +195,7 @@ class DeleteView(APIView):
         return Response(
             {
                 "success": True,
-                "message": "ProductEquipment deleted Successfully",
+                "message": "Deleted Successfully",
                 "data": [],
             },
             status=status.HTTP_204_NO_CONTENT,
