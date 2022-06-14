@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.urls import path
+
+from django.urls import include, path
 from user_profile.views import (
     CustomAuthToken,
     LogoutView,
@@ -8,14 +9,14 @@ from user_profile.views import (
     FileUploadView,
     
 )
-from user_profile.views import ForgotPasswordRequest,ForgotPasswordView
-from django.urls import include, path
+from user_profile.views import ForgotPasswordRequest,ForgotPasswordView, UpdateView
 
 urlpatterns = [
     path("api-token-auth/", CustomAuthToken.as_view()),
     path("logout/", LogoutView.as_view(), name="logout"),
     path("sign-up/", RegisterView.as_view()),
     path("user/", UserAPIView.as_view()),
+    path("update-user/", UpdateView.as_view()),
     path(
         "profile-image-upload/",
         FileUploadView.as_view(),

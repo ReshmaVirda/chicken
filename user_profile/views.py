@@ -11,7 +11,7 @@ from rest_framework import generics
 from rest_framework import parsers
 from django.contrib.auth.models import User
 from user_profile.models import Profile
-from user_profile.serializers import RegisterSerializer, ProfileSerializer
+from user_profile.serializers import RegisterSerializer, ProfileSerializer, UpdateUserSerializer
 from django.conf import settings
 
 # Create your views here.
@@ -269,3 +269,30 @@ class ForgotPasswordView(APIView):
                 status=status.HTTP_400_BAD_REQUEST,
             )
 
+class UpdateView(APIView):
+    """ """
+    def put(self, request, format=None):
+        
+        serializer = UpdateUserSerializer(request.user, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            
+            return Response(
+                {
+                    "success": True,
+                    "message": "Profile Updated",
+                    "data": serializer.data
+                },
+                status=status.HTTP_200_OK,
+            )
+
+        else:
+            return Response(
+                {
+                    "success": False,
+                    "message": str(failure_error(serializer.errors)),
+                    "data": None,
+                    "errors": serializer.errors,
+                },
+                status=status.HTTP_400_BAD_REQUEST,
+            )
