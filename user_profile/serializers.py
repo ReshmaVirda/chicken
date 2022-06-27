@@ -9,13 +9,13 @@ from user_profile.models import Profile
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["username", "email", "groups", "first_name", "last_name", "is_active"]
+        fields = ["username", "email", "groups", "first_name", "is_active"]
 
 
 class UpdateUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["first_name", "last_name"]
+        fields = ["first_name",]
 
 
 class ProfileSerializer(serializers.ModelSerializer):
@@ -34,7 +34,7 @@ class RegisterSerializer(serializers.Serializer):
     )
 
     first_name = serializers.CharField(required=True)
-    last_name = serializers.CharField(required=False)
+    
 
     class Meta:
         fields = (
@@ -42,5 +42,5 @@ class RegisterSerializer(serializers.Serializer):
             "mobile_no",
             "password",
             "first_name",
-            "last_name",
+            
         )

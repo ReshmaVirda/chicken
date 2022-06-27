@@ -39,7 +39,7 @@ class CustomAuthToken(ObtainAuthToken):
                         "token": token.key,
                         "user_id": user.pk,
                         "first_name": user.first_name,
-                        "last_name": user.last_name,
+                        
                         "is_active": user.is_active,
                         "fcm_token": user.profile.fcm_token,
                         "profile_photo_url": user.profile.image_url,
@@ -121,7 +121,7 @@ class RegisterView(ObtainAuthToken,APIView):
 
                             "user_id": user_obj.pk,
                             "first_name": user_obj.first_name,
-                            "last_name": user_obj.last_name,
+                            
                             "is_active": user_obj.is_active,
                             "is_registred": profile.is_registred,
                             "fcm_token": profile.fcm_token,
@@ -170,7 +170,7 @@ class UserAPIView(APIView):
                     "user_id": user.pk,
                     
                     "first_name": user.first_name,
-                    "last_name": user.last_name,
+                    
                     "is_active": user.is_active,
                     
                     # "is_registred": request.user.profile.is_registred,
