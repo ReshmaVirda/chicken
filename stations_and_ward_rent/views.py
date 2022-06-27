@@ -8,7 +8,7 @@ from rest_framework.views import APIView
 from django_filters.rest_framework import DjangoFilterBackend
 from poultry_products.serializers import (
     GovernorateSerializer,
-    RegionSerializer,
+
 )
 from stations_and_ward_rent.serializers import StationAndWardSerializer
 

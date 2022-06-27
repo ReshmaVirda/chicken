@@ -26,15 +26,30 @@ class ImageFile(models.Model):
         else:
             return None
 
-
-class ProductName(models.Model):
+class ProductCate(models.Model):
     name = models.CharField(max_length=200, db_index=True)
+    
 
     class Meta:
         ordering = ("name",)
 
     def __str__(self):
         return self.name
+
+
+class ProductName(models.Model):
+    name = models.CharField(max_length=200, db_index=True)
+    product_category = models.ForeignKey(
+        ProductCate, related_name="products", on_delete=models.CASCADE, null=True,blank=True
+    )
+
+
+    class Meta:
+        ordering = ("name",)
+
+    def __str__(self):
+        return self.name
+
 
 
 class Governorate(models.Model):

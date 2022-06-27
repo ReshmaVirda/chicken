@@ -3,14 +3,16 @@ from rest_framework import serializers
 from django.contrib.auth.password_validation import validate_password
 from rest_framework.validators import UniqueValidator
 from rest_framework import serializers
-from poultry_products.models import Region, Governorate, Product, ProductName
+from poultry_products.models import Governorate, Product, ProductName,ProductCate
 
 class ProductSerializer(serializers.ModelSerializer):
     get_image_url = serializers.ReadOnlyField()
     first_name = serializers.ReadOnlyField(source='creator.first_name')
     
     mobile_no = serializers.ReadOnlyField(source='creator.username')
-
+    cate_name = serializers.ReadOnlyField(source='product_name.product_category.name')
+    product_name_value = serializers.ReadOnlyField(source='product_name.name')
+    
 
 
     class Meta:
@@ -18,14 +20,18 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ProductNameSerializer(serializers.ModelSerializer):
+    cate_name = serializers.ReadOnlyField(source='product_category.name')
+    
     class Meta:
         model = ProductName
         fields = '__all__'
         
-class RegionSerializer(serializers.ModelSerializer):
+
+class ProductCateSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Region
+        model = ProductCate
         fields = '__all__'
+
 
 class GovernorateSerializer(serializers.ModelSerializer):
     class Meta:

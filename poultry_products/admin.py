@@ -1,7 +1,6 @@
 from django.contrib import admin
-from poultry_products.models import Governorate, Region, ProductName, Product
+from poultry_products.models import Governorate, ProductName, Product, ProductCate
 
-# Register your models here.
 
 
 @admin.register(Product)
@@ -14,16 +13,6 @@ class ProductAdmin(admin.ModelAdmin):
     list_filter = list_display
     list_per_page = 300  # No of records per page
 
-
-@admin.register(Region)
-class RegionAdmin(admin.ModelAdmin):
-
-    list_display = ["name",]
-
-    search_fields = list_display
-
-    list_filter = list_display
-    list_per_page = 300  # No of records per page
 
 
 @admin.register(Governorate)
@@ -39,6 +28,16 @@ class GovernorateAdmin(admin.ModelAdmin):
 
 @admin.register(ProductName)
 class ProductNameAdmin(admin.ModelAdmin):
+
+    list_display = ["name",]
+
+    search_fields = list_display
+
+    list_filter = list_display
+    list_per_page = 300  # No of records per page
+
+@admin.register(ProductCate)
+class ProductCateAdmin(admin.ModelAdmin):
 
     list_display = ["name",]
 

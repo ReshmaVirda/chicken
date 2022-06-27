@@ -5,6 +5,9 @@ from poultry_products.views import (
     ListView,
     DetailView,
     CreateView,
+    ProductNameListView,
+    ProductCateListView,
+    GoverListView
 )
 
 urlpatterns = [
@@ -12,6 +15,20 @@ urlpatterns = [
         "list/",
         ListView.as_view(),
     ),
+    
+    path(
+        "product-cate/",
+        ProductCateListView.as_view(),
+    ),
+    path(
+        "product-names/",
+        ProductNameListView.as_view(),
+    ),
+    path(
+        "governorate/",
+        GoverListView.as_view(),
+    ),
+    
     path(
         "update/<int:id>/",
         UpdateView.as_view(),

@@ -9,7 +9,7 @@ from rest_framework.permissions import AllowAny
 
 from poultry_products.serializers import (
     GovernorateSerializer,
-    RegionSerializer,
+
 )
 
 from equipment.serializers import ProductEquipmentSerializer

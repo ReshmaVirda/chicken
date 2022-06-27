@@ -1,6 +1,6 @@
 from itertools import product
 from django.http import Http404
-from poultry_products.models import Product
+from poultry_products.models import Product,ProductName, ProductCate,Governorate
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework import generics
@@ -9,9 +9,10 @@ from rest_framework.views import APIView
 from django_filters.rest_framework import DjangoFilterBackend
 from poultry_products.serializers import (
     GovernorateSerializer,
-    RegionSerializer,
+
     ProductSerializer,
     ProductNameSerializer,
+    ProductCateSerializer
 )
 from rest_framework.permissions import AllowAny
 
@@ -202,3 +203,139 @@ class DeleteView(APIView):
             },
             status=status.HTTP_204_NO_CONTENT,
         )
+
+class ProductNameListView(generics.ListAPIView):
+    """
+    List all.
+    """
+    filter_backends = (DjangoFilterBackend,)  # SearchFilter
+    filter_fields = ("product_category",)
+
+    permission_classes = (AllowAny,)
+    serializer_class = ProductNameSerializer
+    def get_queryset(self):
+        products = ProductName.objects.filter()
+        return products
+    def list(self, request, *args, **kwargs):
+        try:
+            queryset = self.filter_queryset(self.get_queryset())
+        except Exception as e:
+            errors = []
+            for x in e.detail.keys():
+                errors.append(x)
+            return Response(
+                {
+                    "success": False,
+                    "message": e.detail.get(errors[0])[0],
+                    "data": None,
+                    "errors": str(e),
+                },
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        try:
+            serializer = self.serializer_class(queryset, many=True)
+            return Response(data={
+                'success':True,
+                "data":serializer.data,
+                "errors": "",
+                
+            }, status=status.HTTP_200_OK)
+        except:
+            return Response(
+                {
+                    "success": False,
+                    "message": "invalid page ",
+                    "data": None,
+                    "errors": None,
+                },
+                status=status.HTTP_404_NOT_FOUND,
+            )
+
+class ProductCateListView(generics.ListAPIView):
+    """
+    List all.
+    """
+    permission_classes = (AllowAny,)
+    serializer_class = ProductCateSerializer
+    def get_queryset(self):
+        products = ProductCate.objects.filter()
+        return products
+    def list(self, request, *args, **kwargs):
+        try:
+            queryset = self.filter_queryset(self.get_queryset())
+        except Exception as e:
+            errors = []
+            for x in e.detail.keys():
+                errors.append(x)
+            return Response(
+                {
+                    "success": False,
+                    "message": e.detail.get(errors[0])[0],
+                    "data": None,
+                    "errors": str(e),
+                },
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        try:
+            serializer = self.serializer_class(queryset, many=True)
+            return Response(data={
+                'success':True,
+                "data":serializer.data,
+                "errors": "",
+                
+            }, status=status.HTTP_200_OK)
+        except:
+            return Response(
+                {
+                    "success": False,
+                    "message": "invalid page ",
+                    "data": None,
+                    "errors": None,
+                },
+                status=status.HTTP_404_NOT_FOUND,
+            )
+
+
+class GoverListView(generics.ListAPIView):
+    """
+    List all.
+    """
+    permission_classes = (AllowAny,)
+    serializer_class = GovernorateSerializer
+    def get_queryset(self):
+        products = Governorate.objects.filter()
+        return products
+    def list(self, request, *args, **kwargs):
+        try:
+            queryset = self.filter_queryset(self.get_queryset())
+        except Exception as e:
+            errors = []
+            for x in e.detail.keys():
+                errors.append(x)
+            return Response(
+                {
+                    "success": False,
+                    "message": e.detail.get(errors[0])[0],
+                    "data": None,
+                    "errors": str(e),
+                },
+                status=status.HTTP_404_NOT_FOUND,
+            )
+        try:
+            serializer = self.serializer_class(queryset, many=True)
+            return Response(data={
+                'success':True,
+                "data":serializer.data,
+                "errors": "",
+                
+            }, status=status.HTTP_200_OK)
+        except:
+            return Response(
+                {
+                    "success": False,
+                    "message": "invalid page ",
+                    "data": None,
+                    "errors": None,
+                },
+                status=status.HTTP_404_NOT_FOUND,
+            )

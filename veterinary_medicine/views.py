@@ -8,7 +8,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 from poultry_products.serializers import (
     GovernorateSerializer,
-    RegionSerializer,
+ 
 )
 from rest_framework.permissions import AllowAny
 
