@@ -34,7 +34,7 @@ class RegisterSerializer(serializers.Serializer):
     )
 
     first_name = serializers.CharField(required=True)
-    last_name = serializers.CharField(required=True)
+    last_name = serializers.CharField(required=False)
 
     class Meta:
         fields = (

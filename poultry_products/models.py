@@ -80,7 +80,7 @@ class Product(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
     location = models.TextField(blank=True)
-    region = models.ForeignKey(Region, on_delete=models.CASCADE,blank=True,null=True)
+    region = models.TextField(blank=True,null=True)
     governorate = models.ForeignKey(Governorate, on_delete=models.CASCADE,blank=True,null=True)
 
     class Meta:
