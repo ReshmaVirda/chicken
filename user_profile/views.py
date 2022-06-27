@@ -88,11 +88,12 @@ class RegisterView(ObtainAuthToken,APIView):
         serializer = RegisterSerializer(data=request.data)
         if serializer.is_valid():
             try:
+
                 user_obj = User.objects.create(
                     username=request.data["mobile_no"],
                     email=request.data.get("mobile_no"),
                     first_name=request.data.get("first_name"),
-                    last_name=request.data.get("last_name"),
+                 
                 )
                 request.data["username"] = request.data["mobile_no"]
                 
