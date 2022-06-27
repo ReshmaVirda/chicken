@@ -12,7 +12,7 @@ class ProductSerializer(serializers.ModelSerializer):
     mobile_no = serializers.ReadOnlyField(source='creator.username')
     cate_name = serializers.ReadOnlyField(source='product_name.product_category.name')
     product_name_value = serializers.ReadOnlyField(source='product_name.name')
-    
+    product_category_id = serializers.ReadOnlyField(source='product_name.product_category.id')
 
 
     class Meta:
