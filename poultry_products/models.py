@@ -1,5 +1,5 @@
 from django.db import models
-from django.contrib.auth.models import User
+from user_profile.models import User
 class ImageFile(models.Model):
     """
     add this class and the following fields

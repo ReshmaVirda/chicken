@@ -149,3 +149,5 @@ MEDIA_URL = "media/"
 
 STATIC_URL = "public/"
 STATIC_ROOT = BASE_DIR / "public"
+
+AUTH_USER_MODEL = 'user_profile.User'

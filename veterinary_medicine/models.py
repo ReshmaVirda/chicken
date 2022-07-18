@@ -2,10 +2,10 @@ from django.db import models
 
 # Create your models here.
 from django.db import models
-from django.contrib.auth.models import User
+from user_profile.models import User
 
 from django.urls import reverse
-from poultry_products.models import Region, Governorate, ImageFile
+from poultry_products.models import Governorate, ImageFile
 from feed.models import ImageFile
 class VeterinaryMadicine(models.Model):
 

@@ -1,7 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
+from user_profile.models import User
 # Create your models here.
-from poultry_products.models import Region, Governorate
+from poultry_products.models import Governorate
 from feed.models import ImageFile
 class StationAndWard(models.Model):
 

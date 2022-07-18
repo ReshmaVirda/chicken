@@ -1,7 +1,6 @@
 from django.db import models
-from django.contrib.auth.models import User
-from django.urls import reverse
-from poultry_products.models import Region, Governorate
+from user_profile.models import User
+from poultry_products.models import Governorate
 from feed.models import ImageFile
 class ProductEquipment(models.Model):
 

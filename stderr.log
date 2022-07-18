@@ -1479,3 +1479,2090 @@ Not Found: /favicon.ico
 Bad Request: /profile/sign-up/
 Bad Request: /profile/sign-up/
 Bad Request: /profile/sign-up/
+Unauthorized: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Not Found: /public/admin/
+Not Found: /favicon.ico
+Internal Server Error: /admin/poultry_products/productname/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 300, in _get_non_gfk_field
+    raise FieldDoesNotExist()
+django.core.exceptions.FieldDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/base.py", line 33, in render
+    return super().render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 278, in lookup_field
+    value = attr()
+TypeError: __call__() missing 1 required keyword-only argument: 'manager'
+Internal Server Error: /admin/poultry_products/productname/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 300, in _get_non_gfk_field
+    raise FieldDoesNotExist()
+django.core.exceptions.FieldDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/base.py", line 33, in render
+    return super().render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 278, in lookup_field
+    value = attr()
+TypeError: __call__() missing 1 required keyword-only argument: 'manager'
+Not Found: /
+Not Found: /favicon.ico
+Internal Server Error: /admin/poultry_products/productname/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 300, in _get_non_gfk_field
+    raise FieldDoesNotExist()
+django.core.exceptions.FieldDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/base.py", line 33, in render
+    return super().render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 278, in lookup_field
+    value = attr()
+TypeError: __call__() missing 1 required keyword-only argument: 'manager'
+Internal Server Error: /admin/poultry_products/productname/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 265, in lookup_field
+    f = _get_non_gfk_field(opts, name)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 300, in _get_non_gfk_field
+    raise FieldDoesNotExist()
+django.core.exceptions.FieldDoesNotExist
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 204, in _get_response
+    response = response.render()
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 105, in render
+    self.content = self.rendered_content
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/base.py", line 33, in render
+    return super().render(context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/template/library.py", line 214, in render
+    _dict = self.func(*resolved_args, **resolved_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 308, in result_list
+    'results': list(results(cl)),
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 284, in results
+    yield ResultList(None, items_for_result(cl, res, None))
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 275, in __init__
+    super().__init__(*items)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/templatetags/admin_list.py", line 200, in items_for_result
+    f, attr, value = lookup_field(field_name, result, cl.model_admin)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/contrib/admin/utils.py", line 278, in lookup_field
+    value = attr()
+TypeError: __call__() missing 1 required keyword-only argument: 'manager'
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Not Found: /
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Not Found: /
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+2022-05-30 09:58:55.150831 [UID:1557][15513] Child process with pid: 15603 was killed by signal: 15, core dump: 0
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+OSError: LSAPI: Socket read/write error
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /admin/login/
+Bad Request: /poultry_products/create/
+Unauthorized: /poultry_products/create/
+Unauthorized: /poultry_products/create/
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+2022-05-31 05:38:51.003548 [UID:1557][1402] Child process with pid: 1418 was killed by signal: 15, core dump: 0
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /favicon.ico
+Not Found: /
+2022-05-31 06:32:57.526896 [UID:1557][7738] Child process with pid: 7762 was killed by signal: 15, core dump: 0
+Forbidden (CSRF cookie not set.): /admin/login/
+Unauthorized: /feed/create/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /image_service/create/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /image_service/create/
+2022-05-31 13:55:08.281855 [UID:1557][11559] packetLen < 0
+Not Found: /
+Unauthorized: /image_service/create/
+2022-05-31 14:03:16.716678 [UID:1557][29418] packetLen < 0
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /profile/logout/
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /feed/detail/2/
+Not Found: /robots.txt
+Not Found: /
+Not Found: /favicon.ico
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Not Found: /
+Bad Request: /poultry_products/create/
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /equipment/create/
+Internal Server Error: /stations_and_ward_rent/create/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: stations_and_ward_rent_stationandward
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/stations_and_ward_rent/views.py", line 28, in post
+    serializer.save()
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: stations_and_ward_rent_stationandward
+Internal Server Error: /stations_and_ward_rent/create/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: stations_and_ward_rent_stationandward
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/stations_and_ward_rent/views.py", line 28, in post
+    serializer.save()
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: stations_and_ward_rent_stationandward
+Internal Server Error: /veterinary_medicine/create/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: veterinary_medicine_veterinarymadicine
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/veterinary_medicine/views.py", line 28, in post
+    serializer.save()
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 212, in save
+    self.instance = self.create(validated_data)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/serializers.py", line 962, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 453, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 740, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 778, in save_base
+    force_update, using, update_fields,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 881, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 921, in _do_insert
+    using=using, raw=raw,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/query.py", line 1270, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/sql/compiler.py", line 1416, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/backends/sqlite3/base.py", line 423, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: veterinary_medicine_veterinarymadicine
+Unauthorized: /poultry_products/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /poultry_products/list/
+Not Found: /admin/image_service/media/products/2022/06/03/fashionable-woman-brown-coat-beige-hat-posing_1.png
+Not Found: /favicon.ico
+Not Found: /image_service/media/products/2022/06/03/fashionable-woman-brown-coat-beige-hat-posing_1.png
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Bad Request: /poultry_products/update/6/
+Internal Server Error: /poultry_products/update/6
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/middleware/common.py", line 54, in process_request
+    path = self.get_full_path_with_slash(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/middleware/common.py", line 95, in get_full_path_with_slash
+    'url': request.get_host() + new_path,
+RuntimeError: You called this URL via PUT, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining PUT data. Change your form to point to chickenapp.vmjsoftware.in/poultry_products/update/6/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Bad Request: /poultry_products/update/6/
+Bad Request: /poultry_products/update/6/
+Bad Request: /poultry_products/update/9/
+Bad Request: /poultry_products/update/9/
+Bad Request: /poultry_products/update/9/
+Method Not Allowed: /poultry_products/update/9/
+Not Found: /favicon.ico
+OSError: LSAPI: Socket read/write error
+Unauthorized: /poultry_products/detail/1/
+Unauthorized: /poultry_products/detail/1/
+Unauthorized: /poultry_products/detail/1/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 43, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Unauthorized: /poultry_products/create/
+Unauthorized: /poultry_products/create/
+Unauthorized: /poultry_products/create/
+Unauthorized: /poultry_products/create/
+Not Found: /
+Not Found: /favicon.ico
+Unauthorized: /poultry_products/create/
+Unauthorized: /equipment/create/
+Not Found: /
+Unauthorized: /poultry_products/create/
+Unauthorized: /poultry_products/create/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /favicon.ico
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/api-token-auth/
+Bad Request: /poultry_products/update/10/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /poultry_products/create/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Unauthorized: /equipment/list/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Unauthorized: /equipment/create/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Unauthorized: /equipment/list/
+Unauthorized: /equipment/list/
+Unauthorized: /equipment/detail/2/
+Unauthorized: /equipment/list/
+Not Found: /profile/forgot-password/
+Bad Request: /profile/api-token-auth/
+Not Found: /profile/forgot-password-request/
+Not Found: /profile/forgot-password-request/
+Bad Request: /profile/api-token-auth/
+Not Found: /profile/forgot-password-request/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "profile_photo_url": get_path(user.profile, request),
+NameError: name 'get_path' is not defined
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /profile/profile-image-upload/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /profile/forgot-password-request/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /poultry_products/delete/6/
+Not Found: /poultry_products/delete/1/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /api/attachment
+Not Found: /api/attachment
+Not Found: /api/attachment
+Not Found: /poultry_products/delete/17/
+Bad Request: /poultry_products/update/10/
+Not Found: /poultry_products/delete/16/
+Not Found: /poultry_products/delete/16/
+Not Found: /poultry_products/delete/16/
+Bad Request: /profile/forgot-password/
+Bad Request: /profile/forgot-password/
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Bad Request: /poultry_products/update/13/
+Bad Request: /poultry_products/update/13/
+Bad Request: /poultry_products/update/13/
+Unauthorized: /poultry_products/update/12/
+Unauthorized: /poultry_products/update/12/
+Unauthorized: /poultry_products/update/12/
+Not Found: /poultry_products/update/13/
+Unauthorized: /poultry_products/update/12/
+Unauthorized: /poultry_products/update/12/
+Bad Request: /poultry_products/update/2/
+Bad Request: /poultry_products/update/2/
+Bad Request: /profile/api-token-auth/
+Not Found: /favicon.ico
+Bad Request: /profile/forgot-password/
+Bad Request: /profile/forgot-password/
+Bad Request: /profile/forgot-password/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /poultry_products/create/
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /poultry_products/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /equipment/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /stations_and_ward_rent/list/
+Unauthorized: /veterinary_medicine/list/
+Unauthorized: /feed/list/
+Unauthorized: /equipment/list/
+Unauthorized: /feed/list/
+Unauthorized: /poultry_products/list/
+Unauthorized: /feed/list/
+Unauthorized: /equipment/list/
+Unauthorized: /stations_and_ward_rent/list/
+Unauthorized: /veterinary_medicine/list/
+Unauthorized: /poultry_products/list/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Unauthorized: /image_service/create/
+2022-06-13 05:33:04.136260 [UID:1557][20634] packetLen < 0
+Unauthorized: /image_service/create/
+2022-06-13 05:33:42.136393 [UID:1557][20634] packetLen < 0
+Unauthorized: /feed/create/
+Unauthorized: /feed/create/
+Unauthorized: /image_service/create/
+2022-06-13 05:46:42.542165 [UID:1557][13282] packetLen < 0
+Unauthorized: /image_service/create/
+2022-06-13 05:47:00.104495 [UID:1557][13282] packetLen < 0
+Unauthorized: /image_service/create/
+2022-06-13 05:47:54.477000 [UID:1557][12632] packetLen < 0
+Unauthorized: /image_service/create/
+2022-06-13 05:48:34.823103 [UID:1557][12632] packetLen < 0
+Unauthorized: /image_service/create/
+2022-06-13 05:53:04.133577 [UID:1557][13282] packetLen < 0
+Unauthorized: /feed/create/
+Unauthorized: /feed/create/
+Unauthorized: /feed/create/
+Unauthorized: /feed/create/
+Unauthorized: /image_service/create/
+2022-06-13 06:06:10.404730 [UID:1557][13933] packetLen < 0
+Unauthorized: /feed/create/
+Unauthorized: /feed/create/
+Unauthorized: /image_service/create/
+2022-06-13 06:09:50.061593 [UID:1557][9643] packetLen < 0
+Unauthorized: /veterinary_medicine/create/
+Unauthorized: /image_service/create/
+2022-06-13 06:16:36.421248 [UID:1557][9643] packetLen < 0
+Unauthorized: /stations_and_ward_rent/create/
+Unauthorized: /stations_and_ward_rent/create/
+Unauthorized: /image_service/create/
+2022-06-13 06:19:39.005263 [UID:1557][1814] packetLen < 0
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Not Found: /poultry_products/detail/1/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Unauthorized: /equipment/create/
+Bad Request: /profile/api-token-auth/
+Method Not Allowed: /profile/update-user/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/forgot-password/
+Bad Request: /profile/forgot-password/
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Not Found: /
+Forbidden: /profile/sign-up/
+Forbidden: /profile/sign-up/
+Forbidden: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Forbidden: /profile/sign-up/
+Forbidden: /profile/sign-up/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 167, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 290, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/chicken_app/urls.py", line 11, in <module>
+    path("equipment/", include("equipment.urls")),
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/equipment/urls.py", line 3, in <module>
+    from equipment.views import (
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/equipment/views.py", line 10, in <module>
+    from poultry_products.serializers import (
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/poultry_products/serializers.py", line 6, in <module>
+    from poultry_products.models import Governorate, Product, ProductName,ProductCate
+ImportError: cannot import name 'ProductCate' from 'poultry_products.models' (/home/vmjsoftw/chickenapp.vmjsoftware.in/poultry_products/models.py)
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/utils/deprecation.py", line 116, in __call__
+    response = self.process_request(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/middleware/common.py", line 53, in process_request
+    if self.should_redirect_with_slash(request):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/middleware/common.py", line 70, in should_redirect_with_slash
+    if not is_valid_path(request.path_info, urlconf):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/base.py", line 153, in is_valid_path
+    return resolve(path, urlconf)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/base.py", line 24, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 560, in resolve
+    for pattern in self.url_patterns:
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 602, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 595, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/chicken_app/urls.py", line 11, in <module>
+    path("equipment/", include("equipment.urls")),
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/equipment/urls.py", line 3, in <module>
+    from equipment.views import (
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/equipment/views.py", line 10, in <module>
+    from poultry_products.serializers import (
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/poultry_products/serializers.py", line 6, in <module>
+    from poultry_products.models import Governorate, Product, ProductName,ProductCate
+ImportError: cannot import name 'ProductCate' from 'poultry_products.models' (/home/vmjsoftw/chickenapp.vmjsoftware.in/poultry_products/models.py)
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /favicon.ico
+Not Found: /
+2022-06-27 22:32:11.351520 [UID:1557][29683] Child process with pid: 30166 was killed by signal: 15, core dump: 0
+2022-06-27 22:32:14.968977 [UID:1557][29771] Child process with pid: 30167 was killed by signal: 15, core dump: 0
+Unauthorized: /poultry_products/governorate/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /poultry_products/governorate/
+Unauthorized: /poultry_products/governorate/
+Not Found: /api/services
+Unauthorized: /poultry_products/product-names/
+Unauthorized: /poultry_products/product-cate/
+Not Found: /favicon.ico
+Not Found: /
+Not Found: /
+Not Found: /api-auth
+Not Found: /api-auth
+Not Found: /api-auth/
+Not Found: /accounts/profile/
+Not Found: /api-auth/
+Not Found: /media/
+Unauthorized: /poultry_products/detail/1/
+Not Found: /poultry_products/detail/1/
+Not Found: /poultry_products/detail/1/
+Unauthorized: /veterinary_medicine/detail/1/
+Not Found: /veterinary_medicine/detail/1/
+Unauthorized: /feed/create/
+Not Found: /
+Not Found: /
+Unauthorized: /poultry_products/list/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Unauthorized: /poultry_products/list/
+Bad Request: /equipment/create/
+Bad Request: /equipment/create/
+Bad Request: /equipment/create/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /poultry_products/update/61/
+Unauthorized: /poultry_products/update/61/
+Unauthorized: /poultry_products/update/61/
+Unauthorized: /poultry_products/update/61/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /poultry_products/update/63/
+Not Found: /favicon.ico
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Not Found: /poultry_products/product-names/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /poultry_products/create/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /favicon.ico
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Not Found: /
+Not Found: /poultry_products/delete/64/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Unauthorized: /poultry_products/delete/90/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Not Found: /favicon.ico
+Forbidden: /profile/api-token-auth/
+Forbidden: /profile/api-token-auth/
+Forbidden: /profile/api-token-auth/
+Forbidden: /profile/api-token-auth/
+Forbidden: /profile/api-token-auth/
+Forbidden: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /favicon.ico
+Unauthorized: /poultry_products/update/95/
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /admin/login/
+Unauthorized: /poultry_products/update/95/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Unauthorized: /poultry_products/delete/95/
+Unauthorized: /poultry_products/delete/95/
+Unauthorized: /poultry_products/update/95/
+Unauthorized: /poultry_products/update/95/
+Unauthorized: /poultry_products/update/95/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Not Found: /
+Not Found: /
+Not Found: /
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Unauthorized: /profile/api-token-auth/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 44, in post
+    "fcm_token": user.profile.fcm_token,
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/db/models/fields/related_descriptors.py", line 424, in __get__
+    self.related.get_accessor_name()
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Unauthorized: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Unauthorized: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Internal Server Error: /profile/api-token-auth/
+Traceback (most recent call last):
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/vmjsoftw/virtualenv/nakdipayapp.vmjsoftware.in/3.7/lib/python3.7/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/vmjsoftw/chickenapp.vmjsoftware.in/user_profile/views.py", line 20, in post
+    request.data["username"] = request.data["mobile_no"]
+KeyError: 'mobile_no'
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Unauthorized: /profile/api-token-auth/
+Bad Request: /profile/sign-up/
+Bad Request: /profile/sign-up/
+Not Found: /
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /favicon.ico
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+Forbidden (CSRF cookie not set.): /admin/login/
+Not Found: /favicon.ico
+Bad Request: /profile/api-token-auth/
+Bad Request: /profile/api-token-auth/
+Unauthorized: /profile/user/
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
